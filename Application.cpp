@@ -426,7 +426,7 @@ HRESULT Application::InitDevice()
 	bd.CPUAccessFlags = 0;
     hr = _pd3dDevice->CreateBuffer(&bd, nullptr, &_pConstantBuffer);
 
-		//Creates a wireframe render state
+	//Creates a wireframe render state
 		D3D11_RASTERIZER_DESC wfdesc;
 		ZeroMemory(&wfdesc, sizeof(D3D11_RASTERIZER_DESC));
 		wfdesc.FillMode = D3D11_FILL_WIREFRAME;
